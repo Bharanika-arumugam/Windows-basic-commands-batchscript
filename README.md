@@ -87,11 +87,12 @@ Compare the file hello.txt and rose.txt
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 ## BATCH PROGRAM
+```
 @echo off
 set name=John
 echo Hello, %name%
 pause
-
+```
 
 
 ## OUTPUT
@@ -106,6 +107,7 @@ Ask the user if they want to check another number.
 Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 ## BASH PROGRAM
+```
 @echo off
 :loop
 set /p num=Enter a number: 
@@ -127,7 +129,7 @@ goto ask
 :end
 echo Thank you!
 pause
-
+```
 
 ## OUTPUT
 ![alt text](image-18.png)
@@ -136,12 +138,13 @@ pause
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
 ## BATCH PROGRAM
+```
 @echo off
 for /L %%i in (1,1,5) do (
     echo Number: %%i
 )
 pause
-
+```
 
 
 
@@ -158,6 +161,7 @@ Make sure the script works for files located in the same directory as the batch 
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
 ## BATCH PROGRAM
+```
 @echo off
 if exist sample.txt (
     echo sample.txt exists.
@@ -205,7 +209,7 @@ goto menu
 echo Goodbye!
 pause
 exit
-
+```
 ## OUTPUT
 ![alt text](image-21.png)
 
